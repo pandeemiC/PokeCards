@@ -19,3 +19,4 @@ Click [this](https://pokeapi.co/) for the API and for more information
 - AVG The selected Pokemon' once the count is 5.
 - Bio
 - Animations
+- Light/Dark Mode
