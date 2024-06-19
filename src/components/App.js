@@ -3,6 +3,7 @@ import Card from './Card';
 import Button from './Button';
 import fetchPokemon from '../util/PokeApi';
 import Nav from './Nav';
+import EmptyCard from './EmptyCard';
 
 function App() {
   const [pokemon, setPokemon] = useState(null);
@@ -16,8 +17,12 @@ function App() {
   return (
     <div>
       <Nav />
-     {pokemon && <Card pokemon={pokemon} />}
-     <Button onClick={handleFetchPokemon} />
+     {pokemon ? (
+      <Card pokemon={pokemon} />
+     ) : (
+      <EmptyCard />
+     )}
+     <Button onClick={handleFetchPokemon}/>
     </div>
 
   );
