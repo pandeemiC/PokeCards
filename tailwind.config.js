@@ -22,8 +22,11 @@ module.exports = {
       '2xl': '1536px',
     },
     extend: {
+
       animation: {
-        'animate-bounce': 'bounce 4s infinite',
+        'bounce': 'bounce 4s infinite',
+        'spin': "spin 6s linear infinite",
+
       },
       backgroundImage: {
         "poison": "url('/public/assets/poison-gradient.svg')",

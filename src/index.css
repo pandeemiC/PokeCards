@@ -10,5 +10,13 @@
     font-family: 'Poppins', sans-serif;
   }
 
+  .color-change-2x {
+    -webkit-animation: color-change-2x 4s linear infinite alternate both;
+            animation: color-change-2x 4s linear infinite alternate both;
+  }
+
 }
+
+@-webkit-keyframes color-change-2x{0%{background:url('../public/assets/water-gradient.svg')}100%{background: url('../public/assets/dragon-gradient.svg')}}@keyframes color-change-2x{0%{background:url('../public/assets/dragon-gradient.svg')}50%{background:url('../public/assets/ghost-gradient.svg')}75%{background:url('../public/assets/water-gradient.svg')}100%{background:url('../public/assets/grass-gradient.svg')}}
+/* #b1af402c */
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../img/logo.png';
+import logo from '../img/pokemonnavlogo.png';
 
 export default function Nav() {
   return (
@@ -8,7 +8,7 @@ export default function Nav() {
         <img 
             src={logo}
             alt="PokeAPI Logo"
-            className="w-[50px] h-[50px]"
+            className="w-[75px] h-[75px]"
         />
         <div className="border-2 border-zinc-300 w-[400px]"></div>
     </div>
