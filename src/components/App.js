@@ -37,7 +37,7 @@ function App() {
 // change
   return (
     
-    <div className={`${darkMode ? "dark" : ""} bg-normal dark:bg-neutral-900`}>
+    <div className={`${darkMode ? "dark" : ""} bg-normal dark:bg-dark`}>
     <Nav darkMode={darkMode} setDarkMode={setDarkMode} />
     <div className="flex justify-center items-center">
       {pokemon ? (
