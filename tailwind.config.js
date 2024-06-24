@@ -4,9 +4,9 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   safelist: [
-    'bg-normal', 'bg-poison', 'bg-electric', 'bg-water', 'bg-grass', 'bg-ice',
-    'bg-ghost', 'bg-dark', 'bg-fighting', 'bg-ground', 'bg-flying', 'bg-psychic',
-    'bg-bug', 'bg-rock', 'bg-dragon', 'bg-steel', 'bg-fairy', 'bg-fire'
+    'bg-normaling', 'bg-poison', 'bg-electric', 'bg-water', 'bg-grass', 'bg-ice',
+    'bg-ghost', 'bg-darkling', 'bg-fighting', 'bg-ground', 'bg-flying', 'bg-psychic',
+    'bg-bug', 'bg-rock', 'bg-dragon', 'bg-steel', 'bg-fairy', 'bg-fire', 'bg-normal', 'bg-dark'
   ],
 
   theme: {
@@ -23,20 +23,26 @@ module.exports = {
     },
     extend: {
 
+      colors: {
+        'normal': "#ece5e5",
+        'dark': "#363434"
+      },
+
       animation: {
         'bounce': 'bounce 4s infinite',
         'spin': "spin 6s linear infinite",
 
       },
+
       backgroundImage: {
         "poison": "url('/public/assets/poison-gradient.svg')",
         "electric": "url('/public/assets/electric-gradient.svg')",
-        "normal": "url('/public/assets/normal-gradient.svg')",
+        "normaling": "url('/public/assets/normal-gradient.svg')",
         "water": "url('/public/assets/water-gradient.svg')",
         "grass": "url('/public/assets/grass-gradient.svg')",
         "ice": "url('/public/assets/ice-gradient.svg')",
         "ghost": "url('/public/assets/ghost-gradient.svg')",
-        "dark": "url('/public/assets/dark-gradient.svg')",
+        "darkling": "url('/public/assets/dark-gradient.svg')",
         "fighting": "url('/public/assets/fighting-gradient.svg')",
         "ground": "url('/public/assets/ground-gradient.svg')",
         "flying": "url('/public/assets/flying-gradient.svg')",
@@ -47,10 +53,12 @@ module.exports = {
         "steel": "url('/public/assets/steel-gradient.svg')",
         "fairy": "url('/public/assets/fairy-gradient.svg')",
         "fire": "url('/public/assets/fire-gradient.svg')",
+        
       },
     },
   },
   plugins: [],
+  darkMode: 'class',
 };
 // colors: {
 //   "poison": "#c084fc",

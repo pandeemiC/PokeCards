@@ -14,6 +14,7 @@ import React from 'react';
                 throw new Error('Response was not ok.')
             }
             const data = await response.json();
+            console.log(data);
             
              return {
                 name: data.name,

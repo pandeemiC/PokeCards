@@ -6,7 +6,6 @@
 
 @layer base {
   html {
-    background-color: rgb(236, 229, 229);
     font-family: 'Poppins', sans-serif;
   }
 
@@ -19,4 +18,37 @@
 
 @-webkit-keyframes color-change-2x{0%{background:url('../public/assets/water-gradient.svg')}100%{background: url('../public/assets/dragon-gradient.svg')}}@keyframes color-change-2x{0%{background:url('../public/assets/dragon-gradient.svg')}50%{background:url('../public/assets/ghost-gradient.svg')}75%{background:url('../public/assets/water-gradient.svg')}100%{background:url('../public/assets/grass-gradient.svg')}}
 /* #b1af402c */
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.slide-in {
+  animation: slideIn 0.5s ease-out;
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in;
+}
+
+.fade-in-delayed {
+  animation: fadeIn 1s 0.5s ease-in both;
+}
+
 
